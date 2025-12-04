@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Node / frontend (juster navn på mappe om det trengs)
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# .NET / backend
+**/bin/
+**/obj/
+
+# SQLite (db-filer med wal/shm)
+**/*.db-shm
+**/*.db-wal
