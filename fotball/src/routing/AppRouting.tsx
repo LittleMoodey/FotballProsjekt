@@ -4,6 +4,7 @@ import {
   AdminPage,
   NotFoundPage,
   CompanyBooksPage,
+  ArenaPage,
 } from "../pages";
 
 const AppRouting = () => {
@@ -23,7 +24,7 @@ const AppRouting = () => {
                 <Link to="regnskap">CompanyBooksPage</Link>
               </li>
               <li className="linkfix">
-                <Link to="notfoundpage">NotFoundPage</Link>
+                <Link to="arenas">ArenaPage</Link>
               </li>
             </ul>
           </nav>
@@ -34,6 +35,7 @@ const AppRouting = () => {
             <Route path="/" element={<AdminPage />}></Route>
             <Route path="registrer" element={<RegisterPage />}></Route>
             <Route path="regnskap" element={<CompanyBooksPage />}></Route>
+            <Route path="arenas" element={<ArenaPage />}></Route>
             <Route path="*" element={<NotFoundPage />}></Route>
           </Routes>
         </main>
