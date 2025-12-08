@@ -58,15 +58,35 @@ const FotballAdd = () => {
       </div>
       <div>
         <label>Kjøpspris</label>
-        <input ref={priceInput} className="input" type="number" />
+        <input
+          placeholder="$ 000 000"
+          ref={priceInput}
+          className="input placeholder-brown-100"
+          type="number"
+        />
       </div>
       <div>
         <label>Kjønn</label>
-        <input ref={genderInput} className="input" type="text" />
+        <input
+          placeholder="Male"
+          ref={genderInput}
+          className="input"
+          type="text"
+        />
       </div>
       <button onClick={postNewPLayer} className="button">
         Lagre
       </button>
+
+      <label className="block">
+        <span className="block text-md font-bold text-black-700 m-6px">
+          Social Security Number
+        </span>
+        <input className=" border-red-900 solid 1px border-gray-200 placeholder-gray-400 contrast-more:border-gray-400 contrast-more:placeholder-gray-500 ..." />
+        <p className="text-gray-600 opacity-10 contrast-more:opacity-100 ...">
+          We need this to steal your identity.
+        </p>
+      </label>
       <p>{statusMessage}</p>
     </section>
   );

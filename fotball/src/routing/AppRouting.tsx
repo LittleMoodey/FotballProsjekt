@@ -26,6 +26,9 @@ const AppRouting = () => {
               <li className="linkfix">
                 <Link to="arenas">ArenaPage</Link>
               </li>
+              <li className="linkfix">
+                <Link to="*">NotFoundPage</Link>
+              </li>
             </ul>
           </nav>
         </header>
